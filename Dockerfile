@@ -29,6 +29,12 @@ RUN set -eux; \
         php7.4-apcu \
         mcrypt \
         libvips-tools \
+        ghostscript \
+        xpdf-utils \
+        poppler-utils \
+        djvulibre-bin \
+        pdf2djvu \
+        netpbm \
         composer \
         curl \
         nginx \
@@ -42,6 +48,8 @@ RUN set -eux; \
 #	rm -rf /var/lib/apt/lists/*
 
 COPY nginx-php.conf /etc/nginx/sites-available/default
+
+COPY mime.types /etc/nginx/
 
 COPY index.php /var/www/html
 
