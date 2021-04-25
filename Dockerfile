@@ -38,6 +38,8 @@ RUN set -eux; \
         composer \
         curl \
         nginx \
+        cron \
+        python3-pip \
 	; 
 
 RUN set -eux; \
