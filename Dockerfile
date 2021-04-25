@@ -40,6 +40,7 @@ RUN set -eux; \
         nginx \
         cron \
         python3-pip \
+        pipenv \
 	; 
 
 RUN set -eux; \
